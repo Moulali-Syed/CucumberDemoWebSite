@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keywords In Cucumber</title>
+    <link rel="stylesheet" href="../css/accordion.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+      <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/cucumber-logo.png"
+      style="width: 16px; height: 16px"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <p id="main">Keywords in Cucumber</p>
+    </div>
+    <div class="faq-container">
+      <div class="faq active">
+        <h3 class="faq-title" style="color: blue">Scenario</h3>
+        <div class="faq-text">
+          <p class="content">
+            In cucumber testcases are represented as Scenarios
+          </p>
+          <p class="content-sub">
+            Scenario contains steps which are equivalent to test steps ,uses
+            following keywords <span class="span">Given</span> |
+            <span class="span"> When</span> | <span class="span"> Then</span> |
+            <span class="span">And </span> | <span class="span">But</span>
+          </p>
+          <p class="content-sub">
+            <span class="span">Given</span> Preconditions are mentioned in the
+            given keyword
+          </p>
+          <p class="content-sub">
+            <span class="span">When</span> Describes the user actions
+          </p>
+          <p class="content-sub">
+            <span class="span">Then</span> To observe the expected output
+          </p>
+          <p class="content-sub">
+            <span class="span">And</span> an addition to previous steps and
+            represent positive statements
+          </p>
+          <p class="content-sub">
+            <span class="span">But</span> an addition to previous steps and
+            represent negative statements
+          </p>
+        </div>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="faq">
+        <h3 class="faq-title" style="color: blue">.feature file | Feature</h3>
+        <div class="faq-text">
+          <p class="content-sub">
+            .feature file acts as test suite which consists of all Scenarios
+          </p>
+          <p class="content-sub">Feature represents the business requirement</p>
+          <p class="content-sub">
+            We can simply create feature file with. feature extension Scenarios
+            belonging to specific area of Application will be grouped into one
+            Feature file
+          </p>
+          <p class="content-sub">
+            The text that immediately follows the Feature keyword, and is in the
+            same line, is the Title of the Feature file
+          </p>
+          <p class="content-sub">
+            Feature file should contain either Scenario or Scenario Outline. The
+            naming conventions for Feature files should be lowercase with.
+            feature extension
+          </p>
+        </div>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div>
+        <p class="content">Lets See a basic cucumber project flow</p>
+        <a
+          class="hyperLinks"
+          href="./projectBasics.html"
+          title="BasicProjectSetup"
+          >NextPage</a
+        >
+        <a class="hyperLinks" id="home" href="../index.html" title="HomePage"
+          >HomePage</a
+        >
+      </div>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

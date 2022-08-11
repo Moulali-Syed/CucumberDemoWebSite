@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tagging Feature</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/cucumber-logo.png"
+      style="width: 16px; height: 16px"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div>
+      <h1 id="main">Tagging Feature to control Testcases</h1>
+      <p class="content">
+        We have multiple .feature files in our project and we can tag and run
+        testcases based on release or client requirement then we use tags in our
+        feature file like @RegressionTest @SmokeTest @SanityTest
+      </p>
+      <img id="img" src="../images/tags-1.png" alt="tags" />
+      <p class="content">
+        Then in TestRunner class use the tags option in CucumberOptions and run
+        the testcases
+      </p>
+      <img src="../images/tags-2.png" alt="tags" id="img" />
+      <p class="content"></p>
+      <p class="content"></p>
+      <p class="content-sub">
+        If we want to skip a particular tagged Scenario , like SanityTest we can
+        use <span class="span">tags="not @SanityTest"</span>
+      </p>
+      <p class="content"></p>
+      <p class="content"></p>
+      <p class="content-sub">
+        If we want to run testcases tagged with SanityTest and RegressionTest
+        use
+        <span class="span">tags="@SanityTest and @RegressionTest"</span>
+      </p>
+    </div>
+
+    <div>
+      <a class="hyperLinks" href="./hooks.html" title="Hooks">NextPage</a>
+      <a class="hyperLinks" id="home" href="../index.html" title="HomePage"
+        >HomePage</a
+      >
+    </div>
+  </body>
+</html>

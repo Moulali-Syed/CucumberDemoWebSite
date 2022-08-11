@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/cucumber-logo.png"
+      style="width: 16px; height: 16px"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h1 id="main">Cucumber Project Setup</h1>
+    <p class="content">
+      We must have java and eclipse installed and configured on our machine
+    </p>
+    <p class="content">Install cucumber plugin</p>
+    <p class="content-sub">
+      Go to Eclipse market place ,search for cucumber eclipse plugin and install
+      it
+    </p>
+    <img id="img" src="../images/cucumber-plugin.png" alt="cucumber-plugin" />
+    <p class="content-sub">Create a Maven Project</p>
+    <p class="content-sub">
+      Right click on project - select Configure - select Convert To cucumber
+      project
+    </p>
+    <p class="content"></p>
+    <p class="content-sub">Add Cucumber dependencies</p>
+    <img id="img" src="../images/cucumberDependencies.png" alt="dependencies" />
+    <div>
+      <p class="content">The 3 main things we have in a cucumber project</p>
+      <p class="content"></p>
+      <p class="content-sub">
+        <span class="span">Feature </span> is where we define what to be
+        automated using gherkin language
+      </p>
+      <p class="content-sub">
+        <span class="span">StepDefinition</span> is where we implement the
+        testcase , code the teststeps
+      </p>
+      <p class="content-sub">
+        <span class="span">TestRunner</span> which has knowledge of feature file
+        , StepDefinition file to connect above two and execute we use either
+        junit or testng runner class
+      </p>
+    </div>
+    <div>
+      <p class="content"></p>
+      <p class="content"></p>
+      <p class="content">Lets create <strong>Feature file</strong></p>
+      <p class="content-sub">
+        inside src/test/java folder create a package , name it features
+      </p>
+      <p class="content-sub">
+        create a file <span class="span">login.feature</span>
+      </p>
+      <img id="img" src="../images/featureFile.png" alt="featureFile" />
+    </div>
+    <div>
+      <p class="content"></p>
+      <p class="content"></p>
+      <p class="content">Lets create <strong>TestRunner class</strong></p>
+      <p class="content-sub">
+        inside src/test/java folder create a package , name it cucumberOptions
+      </p>
+      <p class="content-sub">
+        create a class <span class="span">TestRunner.java</span>
+      </p>
+      <img src="../images/TestRunner.png" alt="TestRunner" />
+      <p class="content-sub">
+        Now run the TestRunner class this will give a template for all the steps
+        in feature file and then write respective code for each method in
+        StepDefinition file
+      </p>
+    </div>
+
+    <div>
+      <p class="content"></p>
+      <p class="content"></p>
+      <p class="content">Lets create <strong>StepDefinition class</strong></p>
+      <p class="content-sub">
+        inside src/test/java folder create a package , name it stepDefinitions
+      </p>
+      <p class="content-sub">
+        create a class <span class="span">StepDefinition.java</span>
+      </p>
+      <p class="content-sub">
+        Write the code for each test step from the .feature file
+      </p>
+      <img src="../images/stepDef.png" alt="TestRunner" id="img" />
+    </div>
+
+    <div>
+      <a class="hyperLinks" href="./parameterize.html" title="parameterize"
+        >NextPage</a
+      >
+      <a class="hyperLinks" id="home" href="../index.html" title="HomePage"
+        >HomePage</a
+      >
+    </div>
+  </body>
+</html>

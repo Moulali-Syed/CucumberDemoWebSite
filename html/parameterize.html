@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parameterize Testcases</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/cucumber-logo.png"
+      style="width: 16px; height: 16px"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h1 id="main">Parameterize Testcases</h1>
+    <div>
+      <p class="content">Importance of <strong>Regular Expressions</strong></p>
+      <p class="content-sub">
+        Suppose we want to login to an application with different user ids in
+        different Scenario , then we can use regular expressions instead of
+        creating seperate StepDefinition for each of login id
+      </p>
+      <p class="content"></p>
+      <p class="content-sub">Below is a feature file with different userIds</p>
+      <img id="img" src="../images/regex.png" alt="regular expressions" />
+      <p class="content-sub">
+        Use regular expression in StepDefinition and pass them as parameter to
+        the method
+      </p>
+      <img src="../images/regex-1.png" alt="regular expression in stepDef" />
+      <p class="content-sub-1">
+        values passed from gherkin should match number of method arguments
+      </p>
+    </div>
+
+    <div>
+      <p class="content">Importance of <strong>Data Drive</strong></p>
+      <p class="content-sub">
+        If we have less parameters to be passed then we can use regex but if we
+        have many parameters we can use DataTable
+      </p>
+      <img id="img" src="../images/datadrive.png" alt="" />
+      <img id="img" src="../images/datadrive-1.png" alt="" />
+    </div>
+    <div>
+      <p class="content">
+        Parameterizing test runs with <strong>Examples</strong> keyword
+      </p>
+      <p class="content-sub">
+        If we want to repeat single scenario multiple times with different data
+        sets then use parameterization with Examples keyword and Scenario
+        Outline
+      </p>
+      <img id="img" src="../images/examples-1.png" alt="Scenario Outline" />
+      <img id="img" src="../images/examples-2.png" alt="Examples" />
+    </div>
+
+    <div>
+      <a class="hyperLinks" href="./tags.html" title="Tagging">NextPage</a>
+      <a class="hyperLinks" id="home" href="../index.html" title="HomePage"
+        >HomePage</a
+      >
+    </div>
+  </body>
+</html>
